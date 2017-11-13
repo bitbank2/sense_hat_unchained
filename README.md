@@ -13,7 +13,7 @@ accessory which only works on RPI hardware with RPI provided software.
 In actuality, the Sense Hat is just a collection of I2C devices that can work
 with any computer which has an I2C bus. The purpose of this library is to
 provide a simple example of how to work with the Sense Hat without needing
-any proprietary kernel drivers. The code here is not complete in that it
-doesn't expose all modes/options of the sensors. It does provide a minimal
-example of how to initialize and read data from them. I have tested the Sense
-Hat on Raspberry Pi computers (1B/3B/ZeroW) and Orange Pi boards.
+any special software. The code here is not complete in that it doesn't expose
+all modes/options of the sensors. It does provide a minimal example of how to 
+initialize and read data from them. I have tested the Sense Hat on Raspberry
+Pi computers (1B/3B/ZeroW) and Orange Pi boards.
