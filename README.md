@@ -8,8 +8,8 @@ Copyright (c) 2017 BitBank Software, Inc.
 written by Larry Bank
 bitbank@pobox.com
 
-The reason for 'unchained' is that the proprietary kernel drivers which talk
-to the Sense Hat are only shipped with Raspbian for Raspberry Pi Computers.
+The reason for 'unchained' is that the Sense Hat is often assumed to be an
+accessory which only works on RPI hardware with RPI provided software.
 In actuality, the Sense Hat is just a collection of I2C devices that can work
 with any computer which has an I2C bus. The purpose of this library is to
 provide a simple example of how to work with the Sense Hat without needing
