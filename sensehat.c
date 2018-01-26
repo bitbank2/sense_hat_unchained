@@ -159,6 +159,10 @@ char filename[32];
 	i2cWrite(file_acc, 0x20, ucTemp, 1);
 	ucTemp[0] = 0x38; // enable gyro on all axes
 	i2cWrite(file_acc, 0x1e, ucTemp, 1);
+        ucTemp[0] = 0x28; // data rate + full scale + bw selection
+// bits:        ODR_G2 | ODR_G1 | ODR_G0 | FS_G1 | FS_G0 | 0 | BW_G1 | BW_G0
+// 0x28 = 14.9hz, 500dps
+        i2cWrite(file_acc, 0x10, ucTemp, 1); // gyro ctrl_reg1
 
 	return 1;
 
